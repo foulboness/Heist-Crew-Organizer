@@ -2,8 +2,6 @@
 
 A kanban board wearing a heist crew's case file as a disguise. Built with Next.js 14 (App Router), TypeScript, dnd-kit, Zustand, and Tailwind CSS.
 
-Open http://localhost:3000.
-
 ## What it does
 
 - **Timeline board** — five phase columns (Casing → Prep → Entry → The Score → Exit) hold objective cards. Drag cards within a column to resequence, or across columns to advance the plan. Powered by `@dnd-kit/sortable` with multi-container support.
