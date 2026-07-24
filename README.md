@@ -2,13 +2,6 @@
 
 A kanban board wearing a heist crew's case file as a disguise. Built with Next.js 14 (App Router), TypeScript, dnd-kit, Zustand, and Tailwind CSS.
 
-## Run it
-
-```bash
-npm install
-npm run dev
-```
-
 Open http://localhost:3000.
 
 ## What it does
