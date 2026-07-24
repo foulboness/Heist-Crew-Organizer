@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: #0a0d13;
+  background-image:
+    radial-gradient(ellipse 80% 50% at 50% -10%, rgba(63, 160, 232, 0.12), transparent),
+    linear-gradient(rgba(63, 160, 232, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(63, 160, 232, 0.05) 1px, transparent 1px);
+  background-size: auto, 28px 28px, 28px 28px;
+  color: #e9e4d8;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #33405899 transparent;
+}
+*::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+}
+*::-webkit-scrollbar-thumb {
+  background: #33405899;
+  border-radius: 999px;
+}
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.crosshair-corners {
+  position: relative;
+}
+.crosshair-corners::before,
+.crosshair-corners::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-color: rgba(63, 160, 232, 0.55);
+  pointer-events: none;
+}
+.crosshair-corners::before {
+  top: -1px;
+  left: -1px;
+  border-top: 1.5px solid;
+  border-left: 1.5px solid;
+}
+.crosshair-corners::after {
+  bottom: -1px;
+  right: -1px;
+  border-bottom: 1.5px solid;
+  border-right: 1.5px solid;
+}
+
+.drag-ghost {
+  outline: 1.5px dashed rgba(212, 167, 44, 0.65);
+  outline-offset: 4px;
+}
+
+@keyframes dashmove {
+  to {
+    stroke-dashoffset: -20;
+  }
+}
+.dash-flow {
+  stroke-dasharray: 4 4;
+  animation: dashmove 1.2s linear infinite;
+}
