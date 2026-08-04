@@ -11,7 +11,7 @@ A kanban board wearing a heist crew's case file as a disguise. Built with Next.j
 - **Persisted state** — everything lives in a Zustand store with `persist` middleware, so your plan survives a refresh (stored in `localStorage` under `blackprint-heist-board`).
 
 
-## 🛠 Tech Stack
+## Tech Stack
 
 | Technology | Purpose |
 | :--------- | :------ |
@@ -22,7 +22,7 @@ A kanban board wearing a heist crew's case file as a disguise. Built with Next.j
 | **Zustand** | Lightweight global state management |
 | **Framer Motion** *(Optional)* | Animations and smooth UI transitions |
 
-## 🚀 Getting Started
+## Getting Started
 
 Follow these steps to run the project locally.
 
